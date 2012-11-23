@@ -1,0 +1,65 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    
+    <LinearLayout android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:orientation="horizontal"
+         android:id="@+id/linearLayoutUsername"
+         android:layout_alignParentTop="true">
+         
+         <TextView
+             android:layout_height="wrap_content"
+             android:layout_width="wrap_content"
+             android:text="Username"/>
+         <EditText
+            android:id="@+id/editUsername"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="raddningstjanst"
+            
+            />
+     </LinearLayout>
+     
+     <LinearLayout android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:orientation="horizontal"
+         android:id="@+id/linearLayoutPassword"
+         android:layout_below="@id/linearLayoutUsername">
+         
+         <TextView
+             android:layout_height="wrap_content"
+             android:layout_width="wrap_content"
+             android:text="Password"/>
+         <EditText
+            android:id="@+id/editPassword"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="asd"
+            />
+     </LinearLayout>
+    
+    <Button android:id="@+id/btnRegisterSip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Register SIP"
+        android:layout_below="@id/linearLayoutPassword"
+        android:layout_centerHorizontal="true"
+        android:onClick="btnRegisterSipClicked"/>
+    
+     <Button android:id="@+id/btnCall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Call nr 2"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="btnCallClicked"/>
+     
+     
+    
+
+</RelativeLayout>
